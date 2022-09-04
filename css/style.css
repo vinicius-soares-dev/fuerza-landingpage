@@ -462,4 +462,126 @@ div {
     }
 }
 
+@media screen and (max-width: 390px) {
+    .home-page > .imagem-titulo {
+        width: 242px;
+        top: 102px;
+        right: 74px;
+    }
+
+    .home-page > .titulo-home {
+        font-size: 2em;
+        top: 50%;
+        left: 12%;
+    }
+
+    .page-sobre > p {
+        width: 90vw;
+        padding: 54px;
+        line-height: 1.5em;
+        font-size: 18px;
+    }
+
+    .page-patrocinio > p {
+        font-size: 20px;
+    }
+
+    .recrutamento-contato > p {
+        font-size: 23px;
+        text-indent: 0em;
+    }
+
+    .recrutamento-contato > .paragrafo-desenvolvedor {
+        font-size: 10px;
+    }
+
+    .btn-contato {
+        left: 130px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .home-page > .imagem-titulo {
+        width: 254px;
+        top: 102px;
+        right: 74px;
+    }
+
+    .home-page > .titulo-home {
+        font-size: 2em;
+        top: 50%;
+        left: 15%;
+    }
+
+    .page-sobre > p {
+        font-size: 20px;
+    }
+
+    .page-patrocinio > p {
+        font-size: 20px;
+    }
+
+    .recrutamento-contato > p {
+        font-size: 22px;
+    }
+
+    .recrutamento-contato > .paragrafo-desenvolvedor  {
+        font-size: 10px;
+    }
+
+    .btn-contato {
+        left: 145px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .home-page > .imagem-titulo {
+        width: 212px;
+        top: 100px;
+        right: 74px;
+    }
+
+    .home-page > .titulo-home {
+        font-size: 2em;
+        top: 51%;
+        left: 10%;
+    }
+
+    .page-sobre > p {
+        width: 90vw;
+        padding: 53px;
+        line-height: 1.5em;
+        font-size: 16px;
+    }
+
+    .page-patrocinio > p {
+        width: 62vw;
+        padding: 14px;
+        text-indent: 0em;
+        line-height: 1.5em;
+        font-size: 18px;
+    }
+
+    .recrutamento-contato > p {
+        width: 61vw;
+        padding: 30px;
+        text-indent: 0em;
+        line-height: 1.5em;
+        font-size: 17px;
+    }
+
+    .recrutamento-contato > .paragrafo-desenvolvedor {
+        margin-top: 126px;
+        margin-left: 48px;
+        font-size: 8px;
+    }
+
+    .btn-contato {
+        left: 107px;
+    }
+}
+
+  
+
+
   
