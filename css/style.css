@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Poppins:wght@100;300;400;600&display=swap');
+
+:root {
+    --font-principal: 'Poppins', sans-serif;
+    --font-secundaria: 'Alumni Sans Pinstripe', sans-serif;
+    --cor-principal: #F21905;
+    --cor-secundaria: #730202;
+    --cor-neutra: #fff;
+}
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative; 
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start end;
+}
+
+.home-page {
+    background: var(--cor-principal);
+    text-shadow: 3px 3px 4px RGB(0, 0, 0, 0, 59);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.titulo-home {
+    font-family: var(--font-principal);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bolder;
+    position: absolute;
+    left: 180px;
+}
+
+.home-page > img {
+    position: absolute;
+    right: 200px;
+}
+
+.titulo-home:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.page-sobre {
+    background: #0D0D0D;
+    flex-direction: column;
+    position: relative;
+}
+
+.page-sobre>h2 {
+    font-family: var(--font-principal);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 3em;
+    color: #F21905;
+    text-shadow: 1px 2px 5px #000000;
+    position: absolute;
+    top: 20px;
+}
+
+.page-sobre>p {
+    padding: 30px;
+    width: 40vw;
+    line-height: 2em;
+    text-indent: 1.5em;
+    color: var(--cor-neutra);
+    font-family: var(--font-principal);
+    position: absolute;
+    text-align: center;
+}
+
+
+.page-patrocinio {
+    flex-direction: column;
+    background: #730202;
+    position: relative;
+}
+
+.page-patrocinio > h2 {
+    font-family: var(--font-principal);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 3em;
+    color: var(--cor-neutra);
+    text-shadow: 1px 2px 5px #000000;
+    position: absolute;
+    top: 20px;
+}
+
+.page-patrocinio > p {
+    padding: 30px;
+    width: 40vw;
+    color: var(--cor-neutra);
+    font-family: var(--font-principal);
+    position: absolute;
+    line-height: 2em;
+    
+}
+
+.recrutamento-contato {
+    background: #0D0D0D;
+    flex-direction: column;
+    position: relative;
+}
+
+.recrutamento-contato > h2 {
+    font-family: var(--font-principal);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 3em;
+    color: #F21905;
+    text-shadow: 1px 2px 5px #000000;
+    position: absolute;
+    top: 20px;
+}
+
+.recrutamento-contato > p {
+    padding: 30px;
+    width: 40vw;
+    line-height: 4em;
+    color: var(--cor-neutra);
+    font-family: var(--font-principal);
+    position: absolute;
+}
+
+.recrutamento-contato > .paragrafo-desenvolvedor {
+    margin-top: 200px;
+    margin-left: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-contato {
+    padding: 20px 30px;
+    background: linear-gradient(to right, #870000, #190a05);
+    color: var(--cor-neutra);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 90px;
+    left: 580px;
+}
+
+
+.btn-contato:hover {
+    cursor: pointer;
+}
+
+.paragrafo-desenvolvedor > a {
+    text-decoration: none;
+    color: var(--cor-neutra);
+    font-weight: bold;
+}
+
+.paragrafo-desenvolvedor > a > abbr {
+    text-decoration: none;
+}
+
+
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width: 1189px) {
+    .titulo-home {
+        font-size: 2em;
+        
+    }
+    .btn-contato {
+        left: 500px;
+    }
+
+    .page-patrocinio > p {
+        width: 50vw;
+        padding: 120px;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1029px)  {
+    .recrutamento-contato > p {
+        padding: 20px;
+        line-height: 2em;
+    }
+
+    .btn-contato {
+        left: 400px;
+    }
+
+    .paragrafo-desenvolvedor {
+        left: 180px;
+    }
+
+    .titulo-home {
+        left: 100px;
+    }
+
+    .imagem-titulo {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 942px) {
+    .page-patrocinio > p {
+        width: 50vw;
+        padding: 20px;
+    }
+
+    .page-sobre > p {
+        width: 50vw;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .paragrafo-desenvolvedor {
+        left: 100px;
+    }
+
+    .recrutamento-contato > p {
+        width: 50vw;
+        padding: 20px;
+    }
+
+    .btn-contato {
+        padding: 10px 20px;
+        left: 330px;
+    }
+
+    .page-sobre > p {
+        width: 70vw;
+        padding: 20px;
+    }
+
+    .imagem-titulo {
+        margin-left: 300px;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 715px) {
+    .titulo-home {
+        top: 80px;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .imagem-titulo {
+        width: 300px;
+        text-align: center;
+    }
+
+    .page-sobre > p {
+        width: 90vw;
+        padding: 30px;
+    }
+
+    .page-patrocinio > p {
+        width: 90vw;
+        padding: 30px;
+    }
+
+    .recrutamento-contato > p {
+        width: 90vw;
+        padding: 30px;
+    }
+
+    .btn-contato {
+        left: 300px;
+    }
+
+    .paragrafo-desenvolvedor {
+        left: 30px;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .titulo-home {
+        font-size: 2em;
+        left: 160px;
+    }
+
+    .imagem-titulo {
+        width: 200px;
+    }
+
+    .page-sobre > h2 {
+        font-size: 2em;
+    }
+
+    .page-sobre > p {
+        width: 70vw;
+        padding: 50px;
+        line-height: 2em;
+        height: 100%vh;
+    }
+
+    .recrutamento-contato > h2 {
+        font-size: 2em;
+    }
+
+    .recrutamento-contato > p {
+        width: 70vw;
+        padding: 50px;
+        line-height: 2em;
+        height: 100%vh;
+    }
+
+    .paragrafo-desenvolvedor {
+       font-size: 10px;
+    }
+
+    .btn-contato {
+        left: 250px;
+    }
+
+    .page-patrocinio > h2 {
+        font-size: 2em;
+    }
+
+    .page-patrocinio > p {
+        width: 70vw;
+        padding: 50px;
+        line-height: 2em;
+        height: 100%vh;
+    }
+}
+
+
+@media screen and (max-width: 589px) {
+    .page-sobre > p {
+        width: 90vw;
+        padding: 50px;
+        line-height: 2em;
+        height: 100%vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .titulo-home {
+        font-size: 2em;
+        top: 50%;
+        left: 20%;
+    }
+
+    .imagem-titulo {
+        width: 200px;
+        top: 20px;
+        align-self: center;
+    }
+
+    .btn-contato {
+        left: 200px
+    }
+
+    .paragrafo-desenvolvedor {
+        margin-left: 0px;
+        font-size: 8px;
+        flex-wrap: wrap;
+
+    }
+
+    .page-sobre > p {
+        width: 90vw;
+        padding: 50px;
+        line-height: 1.5em;
+        height: 100%vh;
+        font-size: 15px;
+    }
+
+    .page-patrocinio > p {
+        width: 90vw;
+        padding: 50px;
+        line-height: 1.5em;
+        height: 100%vh;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-page > .imagem-titulo {
+        width: 200px;
+        top: 80px;
+        right: 145px;
+    }
+
+    .page-sobre > h2 {
+        font-size: 1.5em;
+    }
+
+    .page-patrocinio > h2 {
+        font-size: 1.5em;
+    }
+
+    .page-patrocinio > p {
+        width: 60vw;
+        padding: 10px;
+        text-indent: 1em;
+        line-height: 1.5em;
+        height: 100%vh;
+        font-size: 15px;
+    }
+
+    .recrutamento-contato > h2 {
+        font-size: 1.5em;
+    }
+
+    .recrutamento-contato > p {
+        width: 60vw;
+        padding: 10px;
+        text-indent: 1em;
+        line-height: 1.5em;
+        height: 100%vh;
+        font-size: 15px;
+    }
+
+    .btn-contato {
+        left: 180px;
+    }
+
+    .recrutamento-contato > .paragrafo-desenvolvedor {
+        margin-top: 153px;
+        margin-left: 61px;
+    }
+}
+
+  
